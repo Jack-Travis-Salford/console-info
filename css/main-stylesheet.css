@@ -1,0 +1,155 @@
+/* This stylesheet is controls how the basic layout of the page looks (anything that is common between all webpages. */
+
+/*No column structure for smaller screens*/
+[class*="col-"] {
+width: 100%;
+}
+/* Column Structure for larger Screens: */
+@media only screen and (min-width: 1024px) {
+.col-1 {width: 20%;}
+.col-3 {width: 60%;}
+.col-4 {width: 100%;}
+}
+body{
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+	min-width: 100%;
+}
+
+*{
+	font-family : Arial, Verdana, sans-serif;
+}
+
+/* Site Navigation CSS (Mobile) */
+#site-navigation{
+	padding: 0px;
+	border: 0px;
+	margin : 0px;
+	background-color: #F10000;	
+}
+#site-navigation>ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+#site-navigation>ul>li{
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	border: solid;
+}	
+#site-navigation>ul>li>a{
+		color: black;
+		text-decoration: none;
+}
+#site-navigation>ul>li>a:hover{
+		color: blue;
+}
+
+/* CSS Page Navigation */
+#page-navigation{
+	position:relative;
+}
+
+#page-navigation>h2{
+	text-align: center;
+	font-size: 20px;
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+#page-navigation>ul{
+	width: -moz-fit-content;
+	width: fit-content;
+	margin: 0 auto;
+	list-style-type: none;	
+	padding: 0;
+}
+#page-navigation>ul>li{
+		font-size: 20px;
+		text-decoration: none;
+		text-align: center;
+		margin-bottom: 10px;
+		
+}
+#page-navigation>ul>li>a{
+		text-decoration: none;
+		color: blue;
+}
+#page-navigation>ul>li a:hover{
+		text-decoration: underline;
+}
+#page-navigation>ul>li>a:active{
+		color: red;
+} 
+
+
+/* Defaults for everything else */
+h1 {
+	font-size: 35px;
+	text-align: center;
+}
+
+p{
+	font-size: 20px;
+}
+
+figcaption {
+	font-size: 15px;
+}
+
+footer>p {
+	font-size: 15px;
+}
+
+figure {
+	margin-left: 0;
+	margin-right: 0;
+}
+figure>img {
+	margin: 0 10%;
+	width: 80%;	
+	max-width: 100%;
+}
+figcaption {
+	text-align: center;
+	margin: 0 10%;
+}
+
+/*Changes for tablet screen or larger*/
+@media only screen and (min-width: 768px) {
+	#site-navigation>ul>li{
+		display: inline-table;
+		border: none;
+		padding: 10px 15px;
+		font-size: 22px;
+	} 
+	#site-navigation>ul{
+		/*Allows for firefox to use fit-content, as fit-content alone is not valid*/
+		width: -moz-fit-content;
+		width: fit-content;
+		margin: 0 auto;
+
+	}
+}
+/*Changes for monitors/laptops/bigger screen */
+@media only screen and (min-width: 1024px) {
+	#page-navigation {
+		float:left;
+		margin: 0;		 		
+		position:fixed;
+	}
+	#page-navigation>h2 {
+		margin-right: 5%;
+		text-align: right;
+	}
+	
+	#page-navigation>ul {
+		margin-right: 5%;
+	}
+	#page-navigation>ul>li {
+		text-align: right;
+		width: 100%;
+	}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Console Info - Contact Me</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="viewport" content="height=device-height, initial-scale=1.0"> 
+		<link rel="stylesheet" type="text/css" href="../css/main-stylesheet.css" />
+		<link rel="stylesheet" type="text/css" href="../css/contact-me-stylesheet.css" />		
+	</head>
+	<body>
+		<div id="container">
+			<nav id="site-navigation" class="col-4">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="./ps5.html">PS5</a></li>
+					<li><a href="./xbox.html">Xbox Series X</a></li>
+					<li><a href="./definitions.html">Terminology Explained</a></li>
+					<li><a href="./contact-me.html">Contact Me</a></li>
+				</ul>
+			</nav>
+			
+			<div id="introduction" class="col-3">
+				<header>
+					<h1>Contact Page</h1>
+				</header>
+				<p>Please note that the below form will only work if you have an email application set up on your device. Alternatively, you can send an email directly to <strong>J.S.Travis@edu.salford.ac.uk</strong></p>
+				<p>Please also note that all data entered below is not saved by the website and is only used to send relevant information to an email application, allowing for the creation of the email in a particular
+				format. Once this page is left or refreshed, all inputted data is removed.</p>
+			</div>
+			<div id="contact-form" class="col-3">
+				<h2>Contact Form:</h2>
+				<form action="mailto:j.s.travis@edu.salford.ac.uk" enctype="text/plain" method="post">
+					<fieldset id="radio-buttons">
+						<legend>Please select the reason for contacting me.</legend>
+						<input type="radio" id="suggestion" name="reason" value="suggestion" required>
+						<label for="suggestion">Suggestion</label>
+						<input type="radio" id="correction" name="reason" value="correction">
+						<label for="correction">Correction</label>
+						<input type="radio" id="other" name="reason" value="other">
+						<label for="other">Other</label>
+					</fieldset >
+					<fieldset id="text-input">
+						<legend>Please enter your name, email and message below</legend>
+						<p><label for="senders-name">Please enter your name:</label>
+						<input type="text" id="senders-name" name="senders-name" value="" required></p>
+						<p><label for="senders-email">Please enter your email:</label>
+						<input type="email" id="senders-email" required></p>
+						<p><label for="senders-message">Please enter your message:</label>
+						<textarea id="senders-message" name="senders-message" rows="5" required></textarea></p>		
+						<p><input type="Submit" name="Submit" value="Submit"></p>
+					</fieldset>
+				</form>	
+			</div>				
+			<footer class="col-4">
+				<p>Please note that any comments made about each console are of my own. I have attempted to remain as fair as possible towards both consoles, my opinion being solely driven by research and knowledge
+				of each console/computing and all information is accurate to my knowledge. If you think that any information is inaccurate, or that something is missing from my analysis of said consoles, please feel
+			    free to contact my via email by clicking <a href="./contact-me.html">here</a>.This website and the content of this website is strictly non-profit, nor is there any incentive to favour one/both consoles.
+				This website doesn't use cookies. This website is to provide information about the consoles and is not attempting to sell said product. </p>
+			</footer>
+		</div>
+	</body>
+</html>

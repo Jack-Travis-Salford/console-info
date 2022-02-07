@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1024px) {
+	#introduction, #definitions {
+		margin: 0 20%;
+	}
+}
+dt {
+	font-size: 25px;	
+}
+dd {
+	font-size: 20px;
+	margin: 0;
+}
+	
+#gpu, #memory, #storage, #io-throughput {
+	margin-top: 20px;
+}

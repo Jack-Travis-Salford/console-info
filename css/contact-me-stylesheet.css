@@ -1,0 +1,16 @@
+@media only screen and (min-width: 1024px) {
+	#introduction, #contact-form {
+		margin: 0 20%;
+	}
+}
+textarea {
+	width: 100%;
+	font-size: 20px;
+
+}
+input {
+	font-size: 20px;
+}
+label {
+	font-size: 20px;
+}
