@@ -5,4 +5,4 @@ A simple website created for an assignment in the first year of uni, consisting 
 
 The webpage is responsive to different screen sizes, using a self implemented grid-based system, similar to Bootstrap. 
 
-I am working on getting this and the website created in the 2nd year hosted. This readme will be updated if/when that happens. 
+The webiste may be accessed here: console-info.jacktravis.net
